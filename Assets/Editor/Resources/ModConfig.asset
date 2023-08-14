@@ -13,8 +13,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: iForgor
   title: "I Forgor \U0001F480"
-  author: 
-  description: "\U0001F480\U0001F480\U0001F480"
-  version: 0.1
+  author: BakersDozenBagels
+  description: "What is this?\n\n... I Forgor \U0001F480\n\nModule Id: iForgor\n\nSource:
+    https://github.com/BakersDozenBagels/KTANE-I-Forgor"
+  version: 1.0
   outputFolder: build
   previewImage: {fileID: 2800000, guid: 16b1f46a8e3b2cf4b81d8822faacd20e, type: 3}

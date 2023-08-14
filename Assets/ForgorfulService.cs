@@ -8,9 +8,12 @@ public class ForgorfulService : MonoBehaviour
     private static bool _harmed;
     private void Start()
     {
+        if (_harmed)
+            return;
         Harmony harm = new Harmony("iForgor.BDB");
         System.Reflection.MethodInfo m = ReflectionHelper.FindTypeInGame("BombGenerator").Method("CreateBomb");
         harm.Patch(m, transpiler: new HarmonyMethod(typeof(ForgorfulService).Method("Transpile")));
+        Debug.LogFormat("[I Forgor 💀] Fixed bomb generation.");
         _harmed = true;
     }
 
